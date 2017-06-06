@@ -1,6 +1,6 @@
-import React from 'react';
-import Reflux from 'reflux';
-import ImageStore from '../stores/ImageStore';
+import React from 'react'
+import Reflux from 'reflux'
+import ImageStore from '../stores/ImageStore'
 
 let ImageGrid = React.createClass({
   mixins: [Reflux.connect(ImageStore, 'imagestore')],
@@ -22,6 +22,6 @@ let ImageGrid = React.createClass({
       return (<p>No hay imagenes dispobibles</p>)
     }
   }
-});
+})
 
 export default ImageGrid
